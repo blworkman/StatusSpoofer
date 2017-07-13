@@ -1,4 +1,3 @@
-package hans.misc.markoff;
 import java.io.*;
 import java.util.Random;
 import java.util.Scanner;
@@ -38,7 +37,6 @@ public class StatusSpoofer {
 		try {
 			spoof = new StatusSpoofer(in);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.exit(1);
 		}
@@ -52,7 +50,7 @@ public class StatusSpoofer {
 	    
 	}
 	
-	public void printAllWordCounts(StatusSpoofer ta) {
+	public void printAllWordCounts(StatusSpoofer spoof) {
 		for (int i = 0; i < spoof.wordList.size(); i++) {
 			spoof.printWordCount(spoof.wordList.get(i));
 		}
